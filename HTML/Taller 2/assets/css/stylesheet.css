@@ -7,10 +7,31 @@
 #header_title {
   font-size: 24px;
   color: white;
-  background-color: #001f33;
+  background: linear-gradient(270deg, #001f33, #006494, #003b5c, #12324a);
+  background-size: 600% 600%;
   position: relative;
   text-align: center;
   padding: 35px 0;
+  animation: gradientBG 20s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #header_title {
+    animation: none;
+    transition: none;
+  }
 }
 
 body {
@@ -138,6 +159,79 @@ main {
   text-align: left;
 }
 
+.grid_section {
+  display: flex;
+  justify-content: center;
+  background-color: #f4f8ff;
+  padding: 0;
+  border-radius: 0;
+  margin-top: 0;
+  grid-column: 1 / -1;
+}
+
+.grid_layout {
+  text-align: center;
+  display: grid;
+  width: min(100%, 720px);
+  max-width: 1040px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas:
+    "header header header"
+    "article article aside"
+    "widget1 widget2 aside"
+    "footer footer footer";
+  padding: 30px;
+  background-color: #ffffff;
+  border: 1px solid #d6e2f0;
+  border-radius: 0;
+  color: black;
+}
+
+.grid_layout > * {
+  background-color: #f8fbff;
+  padding: 40px;
+  border: 1px solid black;
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.6);
+}
+
+.grid_layout > header {
+  grid-area: header;
+}
+
+.grid_layout > article {
+  grid-area: article;
+  color: black;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.grid_layout > aside {
+  grid-area: aside;
+  text-align: center;
+}
+
+.grid_layout > section:nth-child(4) {
+  grid-area: widget1;
+  color: black;
+  text-align: center;
+}
+
+.grid_layout > section:nth-child(5) {
+  grid-area: widget2;
+  color: black;
+  text-align: center;
+}
+
+.grid_layout > footer {
+  grid-area: footer;
+  color: black;
+  gap: 0;
+  padding: 40px;
+  margin-top:0;
+}
+
 @media (max-width: 780px) {
   .media_grid {
     grid-template-columns: 1fr;
@@ -145,6 +239,16 @@ main {
 
   .media_block {
     grid-template-columns: 1fr;
+  }
+
+  .grid_layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "nav"
+      "article"
+      "aside"
+      "footer";
   }
 }
 
