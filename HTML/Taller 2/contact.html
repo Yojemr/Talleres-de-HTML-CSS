@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taller 2</title>
+    <link rel="stylesheet" href="assets/css/stylesheet.css" />
+  </head>
+  <body>
+    <!-- Encabezado principal compartido por todas las paginas del taller. -->
+    <header>
+      <h1 id="header_title">Taller 2 - Diseño Web Moderno</h1>
+    </header>
+    <!-- Menu de navegacion global entre las paginas del taller. -->
+    <nav>
+      <ul>
+        <li><a href="./">Inicio</a></li>
+        <li><a href="grid.html">Grid</a></li>
+        <li><a href="multimedia.html">Multimedia</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <!-- Layout de contacto construido con CSS Grid: header, aside, main, info y footer. -->
+    <main>
+      <section class="contact_grid">
+        <!-- Encabezado interno del contacto con nombre y enlaces principales. -->
+        <header class="contact_header">
+          <div class="brand">
+            <h2>Juan Esteban Maya Rodriguez</h2>
+          </div>
+          <nav class="top_nav">
+            <ul>
+              <li>
+                <a href="https://github.com/yojemr" target="_blank">Github</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/yojemr" target="_blank">Instagram</a>
+              </li>
+              <li>
+                <a href="mailto:yojemrlolxd@hotmail.com">Correo personal</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <!-- Barra lateral de perfil; conserva su posicion original dentro del grid. -->
+        <aside class="contact_aside">
+          <div class="profile_card">
+            <img src="assets/media/Foto_carnet_1.jpg" alt="Foto de perfil" />
+            <h3>Juan E. Maya</h3>
+            <p>Desarrollador y Analista de Software</p>
+            <br />
+            <nav class="side_nav">
+              <ul>
+                <li><a href="#" target="_blank">Hoja de vida</a></li>
+                <li><a href="https://github.com/Yojemr?tab=repositories" target="_blank">Repositorio de proyectos</a></li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+
+        <!-- Seccion principal decorada sin modificar la distribucion del grid. -->
+        <section class="contact_main">
+          <h1>Análisis y Desarrollo de Software</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut felis venenatis, laoreet felis sit amet, ornare sapien. Praesent eu quam ante. Quisque vitae nibh eros. In hac habitasse platea dictumst. Morbi vel lorem in massa placerat maximus. Aliquam ut urna lectus. Maecenas urna leo, scelerisque quis sapien semper, elementum aliquet magna. Proin quis magna nibh. Donec interdum, dui a porttitor aliquet, elit leo tempus lacus, vel dignissim enim nibh vel ipsum. Integer quis posuere nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. In a egestas purus. Curabitur auctor justo ipsum, ac mollis risus vehicula ut.
+Nullam cursus justo sed magna lobortis cursus. Nulla ultrices bibendum felis, quis tempus turpis aliquet sit amet. Nulla vitae molestie justo, vel viverra urna. Sed eget elit at erat bibendum feugiat. Nullam tempor euismod orci, a dignissim dolor fermentum sed. Suspendisse dignissim eget neque non aliquam. Aenean blandit ligula eu ante fermentum hendrerit. Vivamus commodo enim neque, ac vehicula elit posuere quis. Pellentesque lobortis sem nulla, non commodo lorem dictum a. Nulla sed nunc nec enim viverra sagittis a id ante. In et mauris facilisis, luctus ipsum ultrices, cursus felis. Morbi sed placerat velit. Morbi eu turpis a orci consequat tristique sed eget nunc. Cras pretium nibh lacinia nulla gravida ultrices.
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque nec dignissim ipsum. Fusce vestibulum pellentesque nisi, ut porta nibh tincidunt et. Phasellus pretium massa eget egestas lacinia. Integer non vulputate ligula, laoreet rutrum ligula. Integer bibendum tincidunt velit, a euismod elit porta nec. Praesent condimentum odio vitae quam aliquam, a ornare purus ultricies. Ut justo augue, semper at lorem sed, tristique pretium lacus. Suspendisse augue dolor, ornare a rutrum nec, fringilla sed dui. Fusce fermentum justo ut metus facilisis, sit amet volutpat purus porttitor. Cras lacus urna, vehicula et rutrum ac, egestas mollis diam. Sed auctor feugiat ornare. In vulputate fringilla urna vel commodo.
+          </p>
+          <img src="https://via.placeholder.com/800x400" alt="Imagen central" />
+        </section>
+
+        <!-- Tarjetas informativas ubicadas debajo del contenido principal. -->
+        <section class="info_cards">
+          <article class="card">
+            <h4>Servicio A</h4>
+            <p>Descripción breve del servicio A y sus beneficios.</p>
+            <button type="button">Leer más</button>
+          </article>
+
+          <article class="card">
+            <h4>Servicio B</h4>
+            <p>Descripción breve del servicio B y cómo ayuda al usuario.</p>
+            <button type="button">Leer más</button>
+          </article>
+        </section>
+
+        <!-- Pie interno del bloque de contacto con derechos y redes. -->
+        <footer class="contact_footer">
+          <p>
+            © 2026 Juan Esteban Maya Rodríguez - Todos los derechos reservados
+          </p>
+          <nav class="social_links">
+            <ul>
+              <li>
+                <a href="https://wa.me/3176438884" target="_blank">Whatsapp</a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+              </li>
+            </ul>
+          </nav>
+        </footer>
+      </section>
+    </main>
+    <!-- Pie de pagina global con creditos del autor. -->
+    <footer>
+      © 2026 Juan Esteban Maya Rodríguez - Todos los derechos reservados
+    </footer>
+  </body>
+</html>
