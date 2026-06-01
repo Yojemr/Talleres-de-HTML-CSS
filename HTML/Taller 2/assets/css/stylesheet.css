@@ -141,9 +141,10 @@ main {
 }
 
 .media_block audio,
-.media_block video {
+.media_block video,
+.media_block iframe {
   width: 100%;
-  border-radius: 30px;
+  border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -153,6 +154,24 @@ main {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
+  height: 100%;
+}
+
+.media_embed {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #000;
+}
+
+.media_embed video,
+.media_embed iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+  object-fit: cover;
 }
 
 .media_item p {
@@ -204,7 +223,7 @@ main {
 .grid_layout > article {
   grid-area: article;
   color: black;
-  margin-bottom: 0;
+  margin-bottom: 0; 
   text-align: center;
 }
 
