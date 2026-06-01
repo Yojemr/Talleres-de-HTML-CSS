@@ -3,8 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Taller 2</title>
-    <link rel="stylesheet" href="assets/css/stylesheet.css" />
+    <title>CSS Grid Layout - Taller 2 de Diseño Web</title>
+    <meta
+      name="description"
+      content="Ejemplos prácticos de CSS Grid Layout con filas, columnas y áreas semánticas en el Taller 2 de HTML y CSS."
+    />
+    <meta name="author" content="Juan Esteban Maya Rodriguez" />
+    <meta
+      name="keywords"
+      content="CSS Grid, HTML semántico, layout, diseño web, filas, columnas, SENA, ADSO"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#001f33" />
+    <meta name="color-scheme" content="light" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="CSS Grid Layout - Taller 2" />
+    <meta
+      property="og:description"
+      content="Página con explicación y ejemplos visuales de CSS Grid Layout."
+    />
+    <meta property="og:locale" content="es_CO" />
+    <link
+      rel="canonical"
+      href="https://yojemr.github.io/Talleres-de-HTML-CSS/HTML/Taller%202/grid.html"
+    />
+    <link rel="icon" href="assets/img/Sena_logo.JPG" type="image/jpeg" />
+    <link rel="stylesheet" href="assets/css/stylesheet_t2.css" />
   </head>
   <body>
     <!-- Encabezado principal compartido por todas las paginas del taller. -->
@@ -12,12 +36,13 @@
       <h1 id="header_title">Taller 2 - Diseño Web Moderno</h1>
     </header>
     <!-- Menu de navegacion global entre las paginas del taller. -->
-    <nav>
+    <nav aria-label="Navegacion principal del Taller 2">
       <ul>
         <li><a href="./">Inicio</a></li>
         <li><a href="grid.html">Grid</a></li>
         <li><a href="multimedia.html">Multimedia</a></li>
         <li><a href="contact.html">Contacto</a></li>
+        <li><a href="curriculum.html">Curriculum Vitae</a></li>
       </ul>
     </nav>
     <!-- Contenido central con explicacion y ejemplos visuales de CSS Grid. -->
@@ -34,9 +59,8 @@
             contenido(content)
           </p>
         </article>
-        <div>
-          <!-- Primer ejemplo: grilla simple con dos bloques de contenido. -->
-          <div class="media_block">
+        <!-- Primer ejemplo: grilla simple con dos bloques de contenido. -->
+        <div class="media_block">
             <article>
               <h2>Ejemplo de Grid</h2>
               <p>
@@ -54,7 +78,6 @@
               <h3>Bloque 2</h3>
               <p>Contenido del bloque 2</p>
             </div>            
-          </div>
         </div>
         <!-- Segundo ejemplo: layout semantico con areas de grid. -->
         <div class="media_block">
@@ -80,8 +103,6 @@
             </div>
           </section>
         </div>
-          </div>
-            </div>
       </section>
     </main>
     <!-- Pie de pagina global con creditos del autor. -->

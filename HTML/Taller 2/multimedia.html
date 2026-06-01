@@ -3,8 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Taller 2</title>
-    <link rel="stylesheet" href="assets/css/stylesheet.css" />
+    <title>Multimedia HTML5 - Audio y Video | Taller 2</title>
+    <meta
+      name="description"
+      content="Ejemplos de integración de audio, video e iframe en HTML5 dentro del Taller 2 de diseño web."
+    />
+    <meta name="author" content="Juan Esteban Maya Rodriguez" />
+    <meta
+      name="keywords"
+      content="HTML5, audio, video, iframe, multimedia web, diseño web, SENA, ADSO"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#001f33" />
+    <meta name="color-scheme" content="light" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Multimedia HTML5 - Taller 2" />
+    <meta
+      property="og:description"
+      content="Página con ejemplos de elementos multimedia HTML5 para audio y video."
+    />
+    <meta property="og:locale" content="es_CO" />
+    <link
+      rel="canonical"
+      href="https://yojemr.github.io/Talleres-de-HTML-CSS/HTML/Taller%202/multimedia.html"
+    />
+    <link rel="icon" href="assets/img/Sena_logo.JPG" type="image/jpeg" />
+    <link rel="stylesheet" href="assets/css/stylesheet_t2.css" />
   </head>
   <body>
     <!-- Encabezado principal compartido por todas las paginas del taller. -->
@@ -12,12 +36,13 @@
       <h1 id="header_title">Taller 2 - Diseño Web Moderno</h1>
     </header>
     <!-- Menu de navegacion global entre las paginas del taller. -->
-    <nav>
+    <nav aria-label="Navegacion principal del Taller 2">
       <ul>
         <li><a href="./">Inicio</a></li>
         <li><a href="grid.html">Grid</a></li>
         <li><a href="multimedia.html">Multimedia</a></li>
         <li><a href="contact.html">Contacto</a></li>
+        <li><a href="curriculum.html">Curriculum Vitae</a></li>
       </ul>
     </nav>
     <!-- Contenido multimedia organizado en dos columnas: audio y video. -->
@@ -38,7 +63,7 @@
             </article>
             <div class="media_item">
               <h3>Electro Fight (Live)</h3>
-              <audio controls>
+              <audio controls preload="metadata">
                 <source
                   src="assets/audio/Electro_Fight_Live.mp3"
                   type="audio/mpeg"
@@ -48,7 +73,7 @@
             </div>
             <div class="media_item">
               <h3>Cuco - Piel Canela</h3>
-              <audio controls>
+              <audio controls preload="metadata">
                 <source
                   src="assets/audio/Cuco-Piel_Canela.mp3"
                   type="audio/mpeg"
@@ -58,7 +83,7 @@
             </div>
             <div class="media_item">
               <h3>Bury The Light</h3>
-              <audio controls>
+              <audio controls preload="metadata">
                 <source
                   src="assets/audio/Bury_the_Light.mp3"
                   type="audio/mpeg"
@@ -68,7 +93,7 @@
             </div>
             <div class="media_item">
               <h3>See U in Hell</h3>
-              <audio controls>
+              <audio controls preload="metadata">
                 <source
                   src="assets/audio/See_U_in_Hell-PapaRoach_Hanumankind_Devil_May_Cry_S2.mp3"
                   type="audio/mpeg"
@@ -92,7 +117,7 @@
             <div class="media_item">
               <h3>Sunrise</h3>
               <div class="media_embed">
-                <video controls>
+                <video controls preload="metadata">
                   <source
                     src="assets/video/Sunrise_video.mp4"
                     type="video/mp4"
@@ -105,15 +130,14 @@
               <h3>Moonrise</h3>
               <div class="media_embed">
                 <iframe
-                src="https://www.youtube-nocookie.com/embed/Nu1phlCuYFk?rel=0&modestbranding=1&playsinline=1"
-                title="Moonrise"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
+                  src="https://www.youtube-nocookie.com/embed/Nu1phlCuYFk?rel=0&modestbranding=1&playsinline=1"
+                  title="Video Moonrise reproducido desde YouTube"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
                 ></iframe>
-                Tu navegador no soporta el segundo elemento de video.
-              </p>
+              </div>
             </div>
           </div>
         </div>
