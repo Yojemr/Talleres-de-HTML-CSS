@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="es-CO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página de registro e inicio de sesión del Taller 3 con componentes de Bootstrap." />
+    <meta name="keywords" content="HTML, Bootstrap, formularios, login, registro" />
+    <meta name="author" content="Juan Esteban Maya Rodríguez" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#212529" />
+    <meta property="og:title" content="CityView - Registro e inicio de sesión" />
+    <meta property="og:description" content="Formulario demostrativo de registro e inicio de sesión creado con Bootstrap." />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://yojemr.github.io/Talleres-de-HTML-CSS/HTML/Taller_3/app/forms.html" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <title>CityView - Registro e inicio de sesión</title>
+  </head>
+
+  <body class="bg-secondary-subtle min-vh-100 d-flex flex-column" data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-smooth-scroll="true" tabindex="0">
+    <header class="sticky-top top-0 z-3">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark shadow" aria-label="Navegación principal">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html#demo" data-bs-toggle="tooltip" data-bs-title="Volver al carrusel principal">
+            <span class="badge text-bg-secondary me-1">CV</span> CityView
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#demo">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tables.html">Ciudades</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="menuComponentes" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Componentes
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="menuComponentes">
+                  <li><a class="dropdown-item" href="../index.html#demo">Carrusel</a></li>
+                  <li><a class="dropdown-item" href="../index.html#tarjetas">Tarjetas</a></li>
+                  <li><a class="dropdown-item" href="../index.html#informacion">Pestañas</a></li>
+                  <li><a class="dropdown-item" href="../index.html#preguntas">Acordeón</a></li>
+                  <li><a class="dropdown-item active" aria-current="page" href="forms.html">Formulario</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#contacto">Contacto</a>
+              </li>
+            </ul>
+            <a class="btn btn-outline-light" href="#login">Acceder</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container my-5 flex-grow-1">
+      <section class="bg-white border rounded shadow-sm p-4 mb-4" aria-labelledby="titulo-acceso">
+        <div class="text-center">
+          <span class="badge text-bg-secondary mb-2">CityView</span>
+          <h1 id="titulo-acceso" class="mb-3">Registro e inicio de sesión</h1>
+          <p class="text-secondary mb-0">
+            Prototipo demostrativo para practicar formularios de Bootstrap. No envía información real.
+          </p>
+        </div>
+      </section>
+
+      <div class="row g-4 align-items-stretch">
+        <section class="col-lg-6" aria-labelledby="titulo-registro">
+          <div class="card h-100 shadow-sm">
+            <div class="card-header bg-dark text-white">
+              <h2 id="titulo-registro" class="h4 mb-0">Crear cuenta</h2>
+            </div>
+            <div class="card-body bg-white">
+              <form class="needs-validation" novalidate>
+                <div class="mb-3">
+                  <label for="registroNombre" class="form-label fw-semibold">Nombre completo</label>
+                  <input type="text" class="form-control" id="registroNombre" name="registroNombre" placeholder="Escribe tu nombre" required />
+                  <div class="invalid-feedback">Escribe tu nombre completo.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="registroCorreo" class="form-label fw-semibold">Correo electrónico</label>
+                  <input type="email" class="form-control" id="registroCorreo" name="registroCorreo" placeholder="nombre@correo.com" required />
+                  <div class="invalid-feedback">Escribe un correo válido.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="registroCiudad" class="form-label fw-semibold">Ciudad de interés</label>
+                  <select class="form-select" id="registroCiudad" name="registroCiudad" required>
+                    <option value="" selected disabled>Selecciona una ciudad</option>
+                    <option value="los-angeles">Los Ángeles</option>
+                    <option value="chicago">Chicago</option>
+                    <option value="nueva-york">Nueva York</option>
+                  </select>
+                  <div class="invalid-feedback">Selecciona una ciudad.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="registroClave" class="form-label fw-semibold">Contraseña</label>
+                  <input type="password" class="form-control" id="registroClave" name="registroClave" placeholder="Crea una contraseña" required />
+                  <div class="invalid-feedback">Crea una contraseña.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="registroConfirmacion" class="form-label fw-semibold">Confirmar contraseña</label>
+                  <input type="password" class="form-control" id="registroConfirmacion" name="registroConfirmacion" placeholder="Repite la contraseña" required />
+                  <div class="invalid-feedback">Confirma la contraseña.</div>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="registroTerminos" required />
+                  <label class="form-check-label" for="registroTerminos">
+                    Acepto los términos del prototipo.
+                  </label>
+                  <div class="invalid-feedback">Debes aceptar los términos.</div>
+                </div>
+                <button type="submit" class="btn btn-secondary w-100">Registrarme</button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="col-lg-6" id="login" aria-labelledby="titulo-login">
+          <div class="card h-100 shadow-sm">
+            <div class="card-header bg-dark text-white">
+              <h2 id="titulo-login" class="h4 mb-0">Inicio de sesión administrativo</h2>
+            </div>
+            <div class="card-body bg-white">
+              <form class="needs-validation" novalidate>
+                <div class="mb-3">
+                  <label for="loginCorreo" class="form-label fw-semibold">Correo electrónico</label>
+                  <input type="email" class="form-control" id="loginCorreo" name="loginCorreo" placeholder="nombre@correo.com" required />
+                  <div class="invalid-feedback">Escribe tu correo electrónico.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="loginClave" class="form-label fw-semibold">Contraseña</label>
+                  <input type="password" class="form-control" id="loginClave" name="loginClave" placeholder="Escribe tu contraseña" required />
+                  <div class="invalid-feedback">Escribe tu contraseña.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="loginTipo" class="form-label fw-semibold">Tipo de acceso</label>
+                  <select class="form-select" id="loginTipo" name="loginTipo" required>
+                    <option value="" selected disabled>Selecciona una opción</option>
+                    <option value="visitante">Visitante</option>
+                    <option value="estudiante">Estudiante</option>
+                    <option value="administrador">Administrador</option>
+                  </select>
+                  <div class="invalid-feedback">Selecciona el tipo de acceso.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="loginCodigo" class="form-label fw-semibold">Código de verificación</label>
+                  <input type="text" class="form-control" id="loginCodigo" name="loginCodigo" placeholder="Ejemplo: CV2026" required />
+                  <div class="invalid-feedback">Escribe el código de verificación.</div>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="recordarSesion" />
+                  <label class="form-check-label" for="recordarSesion">
+                    Recordar sesión en este dispositivo.
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-secondary w-100">Acceder</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="toastFormulario" class="toast text-bg-dark border-0" role="status" aria-live="polite" aria-atomic="true">
+        <div class="d-flex">
+          <div class="toast-body">
+            Formulario validado correctamente. Esta es una demostración local.
+          </div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Cerrar"></button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <p class="mb-0">&copy; 2026 Juan Esteban Maya Rodríguez - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+      (() => {
+        const forms = document.querySelectorAll(".needs-validation");
+
+        forms.forEach((form) => {
+          form.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            if (!form.checkValidity()) {
+              event.stopPropagation();
+              form.classList.add("was-validated");
+              return;
+            }
+
+            form.classList.add("was-validated");
+            bootstrap.Toast.getOrCreateInstance(document.getElementById("toastFormulario")).show();
+          });
+        });
+
+        document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach((element) => {
+          new bootstrap.Tooltip(element);
+        });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="es-CO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Taller práctico de HTML con componentes avanzados de Bootstrap, carrusel, tarjetas, pestañas, acordeón, formulario y animaciones."
+    />
+    <meta
+      name="keywords"
+      content="HTML, Bootstrap, desarrollo de software, taller"
+    />
+    <meta name="author" content="Juan Esteban Maya Rodríguez" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#212529" />
+    <meta property="og:title" content="CityView - Taller 3 Bootstrap" />
+    <meta
+      property="og:description"
+      content="Página demostrativa con componentes de Bootstrap sobre ciudades de Estados Unidos."
+    />
+    <meta property="og:type" content="website" />
+    <link
+      rel="canonical"
+      href="https://yojemr.github.io/Talleres-de-HTML-CSS/HTML/Taller_3/"
+    />
+    <!-- Instalación de Bootstrap -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <title>CityView - Taller 3 Bootstrap</title>
+  </head>
+
+  <body
+    class="bg-secondary-subtle"
+    data-bs-spy="scroll"
+    data-bs-target="#navbarNav"
+    data-bs-smooth-scroll="true"
+    tabindex="0"
+  >
+    <header class="sticky-top top-0 z-3">
+      <nav
+        class="navbar navbar-expand-sm navbar-dark bg-dark shadow"
+        aria-label="Navegación principal"
+      >
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            href="../index.html#demo"
+            data-bs-toggle="tooltip"
+            data-bs-title="Volver al carrusel principal"
+            ><span class="badge text-bg-secondary me-1">CV</span> CityView</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#demo"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="tables.html"
+                  aria-current="page"
+                >
+                  Ciudades
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="menuComponentes"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Componentes
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-dark"
+                  aria-labelledby="menuComponentes"
+                >
+                  <li><a class="dropdown-item" href="../index.html#demo">Carrusel</a></li>
+                  <li>
+                    <a class="dropdown-item" href="../index.html#tarjetas">Tarjetas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../index.html#informacion">Pestañas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../index.html#preguntas">Acordeón</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="forms.html">Formulario</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#contacto"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+            <button
+              class="btn btn-outline-light"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#modalAcceso"
+            >
+              Acceder
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Tabla responsive con 10 columnas y 20 filas sobre ciudades -->
+    <main class="container my-5">
+      <div class="bg-white border rounded shadow-sm p-4">
+        <h2 class="mb-4">Tabla de Ciudades</h2>
+        <div class="table-responsive">
+          <table
+            class="table table-striped table-hover table-bordered caption-top align-middle"
+          >
+            <caption class="text-start text-muted">
+              Tabla responsive con formato Bootstrap, lista de ciudades e
+              información adicional.
+            </caption>
+            <thead class="table-dark">
+              <tr>
+                <th>Ciudad</th>
+                <th>Estado</th>
+                <th>Población</th>
+                <th>Área (km²)</th>
+                <th>Fundación</th>
+                <th>Clima</th>
+                <th>Economía</th>
+                <th>Atracciones</th>
+                <th>Transporte</th>
+                <th>Notas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Aquí se pueden agregar filas con datos de ciudades -->
+              <!-- Ejemplo de una fila -->
+              <tr>
+                <td>New York</td>
+                <td>NY</td>
+                <td>8,398,748</td>
+                <td>783.8</td>
+                <td>1624</td>
+                <td>Templado</td>
+                <td>Diversificada</td>
+                <td>Estatua de la Libertad, Central Park</td>
+                <td>Múltiples opciones de transporte público</td>
+                <td>Ciudad más grande de EE.UU.</td>
+              </tr>
+              <tr>
+                <td>Los Angeles</td>
+                <td>CA</td>
+                <td>3,990,456</td>
+                <td>1,302</td>
+                <td>1781</td>
+                <td>Mediterráneo</td>
+                <td>Entretenimiento, tecnología</td>
+                <td>Hollywood, playas</td>
+                <td>Transporte público limitado</td>
+                <td>Famosa por la industria del cine</td>
+              </tr>
+              <tr>
+                <td>Chicago</td>
+                <td>IL</td>
+                <td>2,705,994</td>
+                <td>606.1</td>
+                <td>1833</td>
+                <td>Continental húmedo</td>
+                <td>Finanzas, manufactura</td>
+                <td>Millennium Park, Navy Pier</td>
+                <td>Sistema de transporte público extenso</td>
+                <td>Conocida por su arquitectura y música blues</td>
+              </tr>
+              <tr>
+                <td>Houston</td>
+                <td>TX</td>
+                <td>2,325,502</td>
+                <td>1,651.1</td>
+                <td>1837</td>
+                <td>Subtropical húmedo</td>
+                <td>Energía, aeroespacial</td>
+                <td>Space Center Houston, parques</td>
+                <td>Sistema de transporte público limitado</td>
+                <td>Centro de la industria energética de EE.UU.</td>
+              </tr>
+              <tr>
+                <td>Phoenix</td>
+                <td>AZ</td>
+                <td>1,660,272</td>
+                <td>1,340.6</td>
+                <td>1867</td>
+                <td>Desértico</td>
+                <td>Servicios, tecnología</td>
+                <td>Desierto de Sonora, parques</td>
+                <td>Sistema de transporte público limitado</td>
+                <td>Conocida por su clima cálido y seco</td>
+              </tr>
+              <tr>
+                <td>Philadelphia</td>
+                <td>PA</td>
+                <td>1,584,138</td>
+                <td>369.6</td>
+                <td>1682</td>
+                <td>Templado</td>
+                <td>Educación, salud</td>
+                <td>Liberty Bell, Independence Hall</td>
+                <td>Sistema de transporte público extenso</td>
+                <td>Importante en la historia de EE.UU.</td>
+              </tr>
+              <tr>
+                <td>San Antonio</td>
+                <td>TX</td>
+                <td>1,532,233</td>
+                <td>1,207.4</td>
+                <td>1718</td>
+                <td>Subtropical húmedo</td>
+                <td>Turismo, servicios</td>
+                <td>Álamo, River Walk</td>
+                <td>Sistema de transporte público limitado</td>
+                <td>Famosa por su historia y cultura mexicana</td>
+              </tr>
+              <tr>
+                <td>San Diego</td>
+                <td>CA</td>
+                <td>1,425,976</td>
+                <td>964.5</td>
+                <td>1769</td>
+                <td>Mediterráneo</td>
+                <td>Turismo, defensa</td>
+                <td>Balboa Park, playas</td>
+                <td>Sistema de transporte público limitado</td>
+                <td>Conocida por su clima agradable todo el año</td>
+              </tr>
+              <tr>
+                <td>Dallas</td>
+                <td>TX</td>
+                <td>1,345,047</td>
+                <td>882.9</td>
+                <td>1841</td>
+                <td>Subtropical húmedo</td>
+                <td>Finanzas, tecnología</td>
+                <td>Reunion Tower, parques</td>
+                <td>Sistema de transporte público limitado</td>
+                <td>Importante centro de negocios y cultura en Texas</td>
+              </tr>
+              <tr>
+                <td>San Jose</td>
+                <td>CA</td>
+                <td>1,030,119</td>
+                <td>469.7</td>
+                <td>1777</td>
+                <td>Mediterráneo</td>
+                <td>Tecnología, servicios</td>
+                <td>Tech Museum, parques</td>
+                <td>Sistema de transporte público limitado</td>
+                <td>Centro de la industria tecnológica en Silicon Valley</td>
+              </tr>
+              <tr>
+                <td>Austin</td>
+                <td>TX</td>
+                <td>964,254</td>
+                <td>704.4</td>
+                <td>1839</td>
+                <td>Subtropical húmedo</td>
+                <td>Tecnología, música</td>
+                <td>Capitolio del Estado, parques</td>
+                <td>Sistema de transporte público limitado</td>
+                <td>Conocida por su escena musical y cultural vibrante</td>
+              </tr>
+              <tr>
+                <td>Jacksonville</td>
+                <td>FL</td>
+                <td>903,889</td>
+                <td>2,265.0</td>
+                <td>1822</td>
+                <td>Subtropical húmedo</td>
+                <td>Transporte marítimo, servicios</td>
+                <td>Jacksonville Zoo, playas</td>
+                <td>Sistema de transporte público limitado</td>
+                <td>Ciudad más grande por área en EE.UU.</td>
+              </tr>
+              <tr>
+                <td>Fort Worth</td>
+                <td>TX</td>
+                <td>895,008</td>
+                <td>910.2</td>
+                <td>1849</td>
+                <td>Subtropical húmedo</td>
+                <td>Manufactura, servicios</td>
+                <td>Kimbell Art Museum, parques</td>
+                <td>Sistema de transporte público limitado</td>
+                <td>Conocida por su cultura vaquera y arte</td>
+              </tr>
+              <tr>
+                <td>Columbus</td>
+                <td>OH</td>
+                <td>892,533</td>
+                <td>577.9</td>
+                <td>1812</td>
+                <td>Templado</td>
+                <td>Educación, tecnología</td>
+                <td>Columbus Zoo, parques</td>
+                <td>Sistema de transporte público limitado</td>
+                <td>Importante centro educativo y tecnológico en Ohio</td>
+              </tr>
+              <tr>
+                <td>Charlotte</td>
+                <td>NC</td>
+                <td>885,708</td>
+                <td>771.0</td>
+                <td>1768</td>
+                <td>Subtropical húmedo</td>
+                <td>Finanzas, servicios</td>
+                <td>Carowinds, parques</td>
+                <td>Sistema de transporte público limitado</td>
+                <td>Importante centro financiero en el sureste de EE.UU.</td>
+              </tr>
+              <tr>
+                <td>San Francisco</td>
+                <td>CA</td>
+                <td>883,305</td>
+                <td>121.4</td>
+                <td>1776</td>
+                <td>Mediterráneo</td>
+                <td>Tecnología, turismo</td>
+                <td>Golden Gate Bridge, Alcatraz</td>
+                <td>Sistema de transporte público extenso</td>
+                <td>Famosa por su cultura diversa y tecnología</td>
+              </tr>
+              <tr>
+                <td>Indianapolis</td>
+                <td>IN</td>
+                <td>867,125</td>
+                <td>953.2</td>
+                <td>1821</td>
+                <td>Templado</td>
+                <td>Manufactura, servicios</td>
+                <td>Indianapolis Motor Speedway, parques</td>
+                <td>Sistema de transporte público limitado</td>
+                <td>Conocida por su carrera de automovilismo Indy 500</td>
+              </tr>
+              <tr>
+                <td>Seattle</td>
+                <td>WA</td>
+                <td>753,675</td>
+                <td>217.0</td>
+                <td>1851</td>
+                <td>Templado oceánico</td>
+                <td>Tecnología, comercio</td>
+                <td>Space Needle, Pike Place Market</td>
+                <td>Sistema de transporte público limitado</td>
+                <td>Famosa por su escena musical y tecnológica</td>
+              </tr>
+              <tr>
+                <td>Denver</td>
+                <td>CO</td>
+                <td>716,492</td>
+                <td>401.3</td>
+                <td>1858</td>
+                <td>Semidesértico</td>
+                <td>Energía, servicios</td>
+                <td>Red Rocks Park, parques</td>
+                <td>Sistema de transporte público limitado</td>
+                <td>Conocida por su proximidad a las Montañas Rocosas</td>
+              </tr>
+              <tr>
+                <td>Washington D.C.</td>
+                <td>DC</td>
+                <td>702,455</td>
+                <td>177.0</td>
+                <td>1790</td>
+                <td>Templado</td>
+                <td>Gobierno, servicios</td>
+                <td>Monumentos, museos</td>
+                <td>Sistema de transporte público extenso</td>
+                <td>Capital de los Estados Unidos</td>
+              </tr>
+              <!-- Agregar más filas según sea necesario -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <div
+      class="modal fade"
+      id="modalAcceso"
+      tabindex="-1"
+      aria-labelledby="tituloModalAcceso"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-dark text-white">
+            <h2 class="modal-title h5" id="tituloModalAcceso">
+              Acceso demostrativo
+            </h2>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Este modal es solo una demostración de Bootstrap. No valida
+              usuarios ni envía información.
+            </p>
+            <div class="alert alert-secondary" role="alert">
+              Â¿Tienes problemas o no tienes una cuenta?
+              <a href="forms.html" class="alert-link">Ingresa al registro e inicio de sesiÃ³n</a>.
+            </div>
+            <div class="mb-3">
+              <label for="usuarioDemo" class="form-label">Usuario</label>
+              <input
+                type="text"
+                class="form-control"
+                id="usuarioDemo"
+                placeholder="Escribe tu usuario"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="claveDemo" class="form-label">Contraseña</label>
+              <input
+                type="password"
+                class="form-control"
+                id="claveDemo"
+                placeholder="Escribe tu contraseña"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button type="button" class="btn btn-secondary">Acceder</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <p class="mb-0">
+        &copy; 2026 Juan Esteban Maya RodrÃ­guez - Todos los derechos reservados
+      </p>
+    </footer>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

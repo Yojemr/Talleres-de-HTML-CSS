@@ -12,52 +12,43 @@
     <meta property="og:description" content="Página demostrativa con componentes de Bootstrap sobre ciudades de Estados Unidos.">
     <meta property="og:type" content="website">
     <link rel="canonical" href="https://yojemr.github.io/Talleres-de-HTML-CSS/HTML/Taller_3/">
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <!-- Instalación de Bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <title>CityView - Taller 3 Bootstrap</title>
 </head>
 <body class="bg-secondary-subtle" data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-smooth-scroll="true" tabindex="0">
     <header class="sticky-top top-0 z-3">
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark shadow" aria-label="Navegación principal">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#demo" data-bs-toggle="tooltip" data-bs-title="Volver al carrusel principal"><i class="bi bi-buildings"></i> CityView</a>
+                <a class="navbar-brand" href="#demo" data-bs-toggle="tooltip" data-bs-title="Volver al carrusel principal"><span class="badge text-bg-secondary me-1">CV</span> CityView</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-sm-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#demo"><i class="bi bi-house"></i> Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="#demo">Inicio</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="menuCiudades" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="bi bi-geo-alt"></i> Ciudades
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="menuCiudades">
-                                <li><a class="dropdown-item" href="#los-angeles">Los Ángeles</a></li>
-                                <li><a class="dropdown-item" href="#chicago">Chicago</a></li>
-                                <li><a class="dropdown-item" href="#nueva-york">Nueva York</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="app/tables.html">Ciudades</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="menuComponentes" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="bi bi-grid-3x3-gap"></i> Componentes
+                                Componentes
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="menuComponentes">
                                 <li><a class="dropdown-item" href="#demo">Carrusel</a></li>
                                 <li><a class="dropdown-item" href="#tarjetas">Tarjetas</a></li>
                                 <li><a class="dropdown-item" href="#informacion">Pestañas</a></li>
                                 <li><a class="dropdown-item" href="#preguntas">Acordeón</a></li>
-                                <li><a class="dropdown-item" href="#contacto">Formulario</a></li>
+                                <li><a class="dropdown-item" href="app/forms.html">Formulario</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contacto"><i class="bi bi-envelope"></i> Contacto</a>
+                            <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
                     </ul>
-                    <button class="btn btn-outline-light" type="button" data-bs-toggle="modal" data-bs-target="#modalAcceso"><i class="bi bi-box-arrow-in-right"></i> Acceder</button>
+                    <button class="btn btn-outline-light" type="button" data-bs-toggle="modal" data-bs-target="#modalAcceso">Acceder</button>
                 </div>
             </div>
         </nav>
@@ -74,7 +65,7 @@
             <!-- The slideshow/carousel -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/img/los-angeles.png" alt="Vista panorámica de Los Ángeles" class="d-block w-100 img-fluid" width="1100" height="500" decoding="async" fetchpriority="high">
+                    <img src="assets/img/los-angeles.jpg" alt="Vista panorámica de Los Ángeles" class="d-block w-100 img-fluid" width="1100" height="500" decoding="async" fetchpriority="high">
                     <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
                         <h2 class="h4">Los Ángeles</h2>
                         <p>Una ciudad reconocida por sus playas, el cine y sus paisajes urbanos.</p>
@@ -82,7 +73,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/chicago.png" alt="Vista panorámica de Chicago" class="d-block w-100 img-fluid" width="1100" height="500" loading="lazy" decoding="async">
+                    <img src="assets/img/chicago.jpg" alt="Vista panorámica de Chicago" class="d-block w-100 img-fluid" width="1100" height="500" loading="lazy" decoding="async">
                     <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
                         <h2 class="h4">Chicago</h2>
                         <p>Destaca por su arquitectura, sus museos y su cercanía al lago Michigan.</p>
@@ -90,7 +81,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/nueva-york.png" alt="Vista panorámica de Nueva York" class="d-block w-100 img-fluid" width="1100" height="500" loading="lazy" decoding="async">
+                    <img src="assets/img/nueva-york.jpg" alt="Vista panorámica de Nueva York" class="d-block w-100 img-fluid" width="1100" height="500" loading="lazy" decoding="async">
                     <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
                         <h2 class="h4">Nueva York</h2>
                         <p>Una ciudad famosa por sus edificios, parques y diversidad cultural.</p>
@@ -114,27 +105,27 @@
         <section id="bienvenida" class="container my-5 bg-white border rounded shadow-sm p-4" aria-labelledby="titulo-bienvenida">
             <h1 id="titulo-bienvenida" class="text-center mb-4">Ciudades de Estados Unidos</h1>
             <div class="alert alert-secondary alert-dismissible fade show" role="alert">
-                <strong><i class="bi bi-info-circle"></i> Bienvenido.</strong> En esta página encontrarás información básica sobre algunas ciudades importantes.
+                <strong>Bienvenido.</strong> En esta página encontrarás información básica sobre algunas ciudades importantes.
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
             </div>
             <div class="row g-3 text-center">
                 <div class="col-md-4">
                     <div class="border rounded p-3 h-100 bg-light">
-                        <i class="bi bi-camera fs-2 text-secondary"></i>
+                        <span class="badge rounded-pill text-bg-secondary">IMG</span>
                         <h2 class="h5 mt-2">Imágenes</h2>
                         <p class="mb-0">El carrusel muestra tres vistas panorámicas.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="border rounded p-3 h-100 bg-light">
-                        <i class="bi bi-card-text fs-2 text-secondary"></i>
+                        <span class="badge rounded-pill text-bg-secondary">TXT</span>
                         <h2 class="h5 mt-2">Contenido</h2>
                         <p class="mb-0">Las tarjetas resumen datos sencillos de cada ciudad.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="border rounded p-3 h-100 bg-light">
-                        <i class="bi bi-mouse fs-2 text-secondary"></i>
+                        <span class="badge rounded-pill text-bg-secondary">UI</span>
                         <h2 class="h5 mt-2">Interacción</h2>
                         <p class="mb-0">Hay menús, acordeón, tabs, collapse, toast, popover y modal.</p>
                     </div>
@@ -164,7 +155,7 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <article id="los-angeles" class="card h-100 shadow-sm">
-                        <img src="assets/img/los-angeles.png" class="card-img-top img-fluid" alt="Imagen de Los Ángeles" width="1100" height="500" loading="lazy" decoding="async">
+                        <img src="assets/img/los-angeles.jpg" class="card-img-top img-fluid" alt="Imagen de Los Ángeles" width="1100" height="500" loading="lazy" decoding="async">
                         <div class="card-body">
                             <h3 class="card-title h5">Los Ángeles</h3>
                             <p class="card-text">Es una ciudad conocida por el cine, sus playas y su clima cálido.</p>
@@ -176,8 +167,8 @@
                             </div>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><i class="bi bi-sun"></i> Clima cálido</li>
-                            <li class="list-group-item"><i class="bi bi-film"></i> Industria del cine</li>
+                            <li class="list-group-item">Clima cálido</li>
+                            <li class="list-group-item">Industria del cine</li>
                         </ul>
                         <div class="card-footer bg-white">
                             <p class="small text-secondary mb-1">Interés turístico</p>
@@ -189,7 +180,7 @@
                 </div>
                 <div class="col-md-4">
                     <article id="chicago" class="card h-100 shadow-sm">
-                        <img src="assets/img/chicago.png" class="card-img-top img-fluid" alt="Imagen de Chicago" width="1100" height="500" loading="lazy" decoding="async">
+                        <img src="assets/img/chicago.jpg" class="card-img-top img-fluid" alt="Imagen de Chicago" width="1100" height="500" loading="lazy" decoding="async">
                         <div class="card-body">
                             <h3 class="card-title h5">Chicago</h3>
                             <p class="card-text">Se destaca por su arquitectura, sus museos y su ubicación junto al lago Michigan.</p>
@@ -201,8 +192,8 @@
                             </div>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><i class="bi bi-building"></i> Arquitectura</li>
-                            <li class="list-group-item"><i class="bi bi-water"></i> Lago Michigan</li>
+                            <li class="list-group-item">Arquitectura</li>
+                            <li class="list-group-item">Lago Michigan</li>
                         </ul>
                         <div class="card-footer bg-white">
                             <p class="small text-secondary mb-1">Interés arquitectónico</p>
@@ -214,7 +205,7 @@
                 </div>
                 <div class="col-md-4">
                     <article id="nueva-york" class="card h-100 shadow-sm">
-                        <img src="assets/img/nueva-york.png" class="card-img-top img-fluid" alt="Imagen de Nueva York" width="1100" height="500" loading="lazy" decoding="async">
+                        <img src="assets/img/nueva-york.jpg" class="card-img-top img-fluid" alt="Imagen de Nueva York" width="1100" height="500" loading="lazy" decoding="async">
                         <div class="card-body">
                             <h3 class="card-title h5">Nueva York</h3>
                             <p class="card-text">Es reconocida por sus edificios, sus parques y su diversidad cultural.</p>
@@ -226,8 +217,8 @@
                             </div>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><i class="bi bi-buildings"></i> Rascacielos</li>
-                            <li class="list-group-item"><i class="bi bi-tree"></i> Parques urbanos</li>
+                            <li class="list-group-item">Rascacielos</li>
+                            <li class="list-group-item">Parques urbanos</li>
                         </ul>
                         <div class="card-footer bg-white">
                             <p class="small text-secondary mb-1">Interés cultural</p>
@@ -246,17 +237,17 @@
             <ul class="nav nav-tabs" id="informacionCiudades" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="turismo-tab" data-bs-toggle="tab" data-bs-target="#turismo" type="button" role="tab" aria-controls="turismo" aria-selected="true">
-                        <i class="bi bi-map"></i> Turismo
+                        Turismo
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="cultura-tab" data-bs-toggle="tab" data-bs-target="#cultura" type="button" role="tab" aria-controls="cultura" aria-selected="false">
-                        <i class="bi bi-people"></i> Cultura
+                        Cultura
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="transporte-tab" data-bs-toggle="tab" data-bs-target="#transporte" type="button" role="tab" aria-controls="transporte" aria-selected="false">
-                        <i class="bi bi-bus-front"></i> Transporte
+                        Transporte
                     </button>
                 </li>
             </ul>
@@ -325,7 +316,7 @@
                     <div class="col-md-6 mb-3">
                         <label for="nombre" class="form-label fw-semibold">Nombre</label>
                         <div class="input-group input-group-lg">
-                            <span class="input-group-text text-bg-secondary"><i class="bi bi-person"></i></span>
+                            <span class="input-group-text text-bg-secondary">N</span>
                             <input type="text" class="form-control border-secondary-subtle" id="nombre" name="nombre" placeholder="Escribe tu nombre" aria-describedby="ayudaNombre" required>
                             <div class="invalid-feedback">Por favor escribe tu nombre.</div>
                         </div>
@@ -346,7 +337,7 @@
                 <div class="mb-3">
                     <label for="correo" class="form-label fw-semibold">Correo electrónico</label>
                     <div class="input-group input-group-lg">
-                        <span class="input-group-text text-bg-secondary"><i class="bi bi-envelope"></i></span>
+                        <span class="input-group-text text-bg-secondary">@</span>
                         <input type="email" class="form-control border-secondary-subtle" id="correo" name="correo" placeholder="nombre@correo.com" aria-describedby="ayudaCorreo" required>
                         <div class="invalid-feedback">Escribe un correo electrónico válido.</div>
                     </div>
@@ -364,7 +355,7 @@
                         Deseo recibir más información sobre estas ciudades.
                     </label>
                 </div>
-                <button type="submit" class="btn btn-secondary"><i class="bi bi-send"></i> Enviar</button>
+                <button type="submit" class="btn btn-secondary">Enviar</button>
             </form>
         </section>
     </main>
@@ -373,11 +364,15 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header bg-dark text-white">
-                    <h2 class="modal-title h5" id="tituloModalAcceso"><i class="bi bi-person-circle"></i> Acceso demostrativo</h2>
+                    <h2 class="modal-title h5" id="tituloModalAcceso">Acceso demostrativo</h2>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
                     <p>Este modal es solo una demostración de Bootstrap. No valida usuarios ni envía información.</p>
+                    <div class="alert alert-secondary" role="alert">
+                        ¿Tienes problemas o no tienes una cuenta?
+                        <a href="app/forms.html" class="alert-link">Ingresa al registro e inicio de sesión</a>.
+                    </div>
                     <div class="mb-3">
                         <label for="usuarioDemo" class="form-label">Usuario</label>
                         <input type="text" class="form-control" id="usuarioDemo" placeholder="Escribe tu usuario">
@@ -397,7 +392,7 @@
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="panelCiudades" aria-labelledby="tituloPanelCiudades">
         <div class="offcanvas-header bg-dark text-white">
-            <h2 class="offcanvas-title h5" id="tituloPanelCiudades"><i class="bi bi-list-check"></i> Resumen de componentes</h2>
+            <h2 class="offcanvas-title h5" id="tituloPanelCiudades">Resumen de componentes</h2>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
         </div>
         <div class="offcanvas-body">
@@ -417,7 +412,7 @@
         <div id="toastFormulario" class="toast text-bg-dark border-0" role="status" aria-live="polite" aria-atomic="true">
             <div class="d-flex">
                 <div class="toast-body">
-                    <i class="bi bi-check-circle"></i> Formulario validado correctamente. Esta es una demostración local.
+                    Formulario validado correctamente. Esta es una demostración local.
                 </div>
                 <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Cerrar"></button>
             </div>
@@ -428,7 +423,7 @@
         <p class="mb-0">&copy; 2026 Juan Esteban Maya Rodríguez - Todos los derechos reservados</p>
     </footer>
 
-    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script>
         (() => {
             const forms = document.querySelectorAll(".needs-validation");
