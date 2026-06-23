@@ -77,16 +77,15 @@
                 </a>
               </li>
               <li class="nav-item dropdown">
-                <a
+                <button
                   class="nav-link dropdown-toggle"
-                  href="#"
                   id="menuComponentes"
-                  role="button"
+                  type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Componentes
-                </a>
+                </button>
                 <ul
                   class="dropdown-menu dropdown-menu-dark"
                   aria-labelledby="menuComponentes"
@@ -112,14 +111,17 @@
                 >
               </li>
             </ul>
-            <button
-              class="btn btn-outline-light"
-              type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#modalAcceso"
-            >
-              Acceder
-            </button>
+            <div class="d-flex gap-2">
+              <a class="btn btn-outline-light" href="https://github.com/Yojemr" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <button
+                class="btn btn-outline-light"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modalAcceso"
+              >
+                Acceder
+              </button>
+            </div>
           </div>
         </div>
       </nav>
@@ -426,8 +428,8 @@
               usuarios ni envía información.
             </p>
             <div class="alert alert-secondary" role="alert">
-              Â¿Tienes problemas o no tienes una cuenta?
-              <a href="forms.html" class="alert-link">Ingresa al registro e inicio de sesiÃ³n</a>.
+              ¿Tienes problemas o no tienes una cuenta?
+              <a href="forms.html" class="alert-link">Ingresa al registro e inicio de sesión</a>.
             </div>
             <div class="mb-3">
               <label for="usuarioDemo" class="form-label">Usuario</label>
@@ -463,9 +465,7 @@
     </div>
 
     <footer class="bg-dark text-white text-center py-3">
-      <p class="mb-0">
-        &copy; 2026 Juan Esteban Maya RodrÃ­guez - Todos los derechos reservados
-      </p>
+      <p class="mb-0">&copy; 2026 Juan Esteban Maya Rodríguez - Todos los derechos reservados</p>
     </footer>
 
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
