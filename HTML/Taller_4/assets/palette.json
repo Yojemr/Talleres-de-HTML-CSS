@@ -1,0 +1,14 @@
+﻿{
+  "brand": "Maleja's Pink Store",
+  "colors": {
+    "hotPink": "#E6007E",
+    "pink": "#FF4DA6",
+    "softPink": "#FFC1DA",
+    "black": "#000000",
+    "white": "#FFFFFF",
+    "light": "#F7E7EE",
+    "gold": "#D4AF37",
+    "coral": "#FFB6C1"
+  },
+  "note": "Paleta de referencia visual. El HTML usa clases de Bootstrap 5 sin CSS personalizado."
+}
